@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.to_do_form{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.to_do_input{
+    width: 80%;
+    height: 90%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.to_do_input:focus{
+    outline: none;
+}
+
+.list_container{
+    width: 100%;
+    height: 75%;
+}
+
+.to_do_btn{
+    width: 18%;
+    height: 90%;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    background-color: rgb(6, 60, 122);
+    color: white;
+}
+
+.to_do_btn:hover{
+    background-color: rgb(48, 122, 207);
+}
+
+.to_do_list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.item{
+    width: 100%;
+    height: 10vh;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.checkbox{
+    width: 30px;
+    /* transform: scale(2); */
+    width: 10%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.del_item{
+    width: 10%;
+    height: 80%;
+    border: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.del_item:hover{
+    background-color: rgb(134, 0, 0);
+}
+
+.item p{
+    width: 80%;
+    /* height: 100%; */
+    align-self: center;
+    text-align: center;
+}
+
+.checked{
+    text-decoration: line-through;
+}
