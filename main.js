@@ -80,7 +80,6 @@ function del_item(id){
     items_list = items_list.filter(function(item){
         return item.id != id;
     })
-    // console.log(items_list);
     addToLocalStorage(items_list);
 }
 
@@ -89,14 +88,10 @@ td_itemList.addEventListener('click', function(event){
         toggle(event.target.parentElement.getAttribute('data-key'));
     }
     else if (event.target.classList.contains('del_item')){
-        // console.log('hey');
         del_item(event.target.parentElement.getAttribute('data-key'));
     }
     else if (event.target.classList.contains('del_btn')){
         del_item(event.target.parentElement.parentElement.getAttribute('data-key'));
     }
-    // else if(event.target.type === 'click'){
-    //     console.log('Nice');
-    // }
     console.log(event.target);
 })
