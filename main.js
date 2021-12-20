@@ -31,7 +31,6 @@ function showTodos(todos){
     todos.forEach(function(item){
         const checked = item.completed ? 'checked': null;
 
-        console.log(checked);
         var list_item = document.createElement('li');
         list_item.setAttribute('class', 'item');
         list_item.setAttribute('data-key', item.id);
